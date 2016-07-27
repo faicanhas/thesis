@@ -1,0 +1,1 @@
+{'coolanttemp': 79, 'engineload': 65.88, 'kecepatan': 67, 'rpm': 2453}

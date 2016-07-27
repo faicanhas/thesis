@@ -1,0 +1,1 @@
+sudo rfcomm connect hci0 AA:BB:CC:11:22:33
