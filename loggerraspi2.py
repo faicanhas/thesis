@@ -31,11 +31,14 @@ kecepatan = data["kecepatan"]
 engineload = data["engineload"]
 coolanttemp = data["coolanttemp"]
 
+# Tambahan waktu yang diminta dengan format YYYY-MM-DD
+tanggal = strftime("%Y-%m-%d", time.localtime())
+
 
 
 #array data per menit
 menit = {}
-timestamp = strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+timestamp = strftime("%Y-%m-%d %H:%M:%S", time.localtime())     # <<--- Untuk apa ya?
 #array data dari device
 device = {}
 device['android_id'] = android_id
@@ -43,6 +46,7 @@ device['rpm'] = rpm
 device['kecepatan'] = kecepatan
 device['engineload'] = engineload
 device['coolanttemp'] = coolanttemp
+device['tanggal'] = tanggal     # <<--- Diambil dari data tanggal di Raspi
 
 menit[0] = device
     
