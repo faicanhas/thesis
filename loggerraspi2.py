@@ -34,6 +34,9 @@ coolanttemp = data["coolanttemp"]
 # Tambahan waktu yang diminta dengan format YYYY-MM-DD
 tanggal = strftime("%Y-%m-%d", time.localtime())
 
+#Tambahan jam dengan format HH:MM
+jam = strftime("%H:%M", time.localtime())
+
 
 
 #array data per menit
@@ -47,6 +50,7 @@ device['kecepatan'] = kecepatan
 device['engineload'] = engineload
 device['coolanttemp'] = coolanttemp
 device['tanggal'] = tanggal     # <<--- Diambil dari data tanggal di Raspi
+device['jam'] = jam
 
 menit[0] = device
     
