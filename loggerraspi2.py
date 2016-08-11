@@ -66,7 +66,7 @@ print golive
 
 #kirim data ke server
 params = urllib.urlencode({'data': golive})
-f = urllib.urlopen("http://enigmaofficials.com/raspberrylogger/raspberryapix", params)
+f = urllib.urlopen("http://enigmaofficials.com/raspberrylogger/raspberryapi", params)
 print f.read()
 sleep(1)
     
